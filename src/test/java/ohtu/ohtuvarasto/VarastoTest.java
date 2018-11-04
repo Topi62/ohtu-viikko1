@@ -144,8 +144,8 @@ public class VarastoTest {
     @Test
     public void toimivaVarastoLiikaaAlkusaldo() {
         Varasto lato = new Varasto(10.0,20.0);
-        // ylimääräiset hukkaan eli saldo eka luku
-        assertEquals(10.0, lato.getSaldo(), vertailuTarkkuus);
+        // ylimääräiset hukkaan eli saldo eka luku, tämä ei läpi
+        assertEquals(20.0, lato.getSaldo(), vertailuTarkkuus);
     }
 
 }
