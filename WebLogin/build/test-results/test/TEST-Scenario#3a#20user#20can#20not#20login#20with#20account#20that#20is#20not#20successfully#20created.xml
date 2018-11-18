@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Scenario: user can not login with account that is not successfully created" tests="5" skipped="0" failures="0" errors="0" timestamp="2018-11-18T11:32:41" hostname="dhcp-asv-91" time="0.043">
+  <properties/>
+  <testcase name="Given user with username &quot;aa&quot; and password &quot;bad&quot; is tried to be created" classname="Scenario: user can not login with account that is not successfully created" time="0.0"/>
+  <testcase name="And login is selected" classname="Scenario: user can not login with account that is not successfully created" time="0.001"/>
+  <testcase name="When when not created username &quot;aa&quot; and password &quot;bad&quot; is trying logIn" classname="Scenario: user can not login with account that is not successfully created" time="0.0"/>
+  <testcase name="Then user is not logged in and error message is given" classname="Scenario: user can not login with account that is not successfully created" time="0.0"/>
+  <testcase name="classMethod" classname="Scenario: user can not login with account that is not successfully created" time="0.094"/>
+  <system-out><![CDATA[
+  Scenario: user can login with successfully generated account                       ?[90m# ohtu/new_user.feature:23?[0m
+    ?[32mGiven ?[0m?[32muser with username "?[0m?[32m?[1mlea?[0m?[32m" with password "?[0m?[32m?[1msalainen1?[0m?[32m" is successfully created?[0m ?[90m# Stepdefs.new_user_can_log_in(String,String)?[0m
+    ?[32mAnd ?[0m?[32mlogin is selected?[0m                                                            ?[90m# Stepdefs.login_selected()?[0m
+    ?[32mWhen ?[0m?[32mcorrect username "?[0m?[32m?[1mlea?[0m?[32m" and password "?[0m?[32m?[1msalainen1?[0m?[32m" are given?[0m                   ?[90m# Stepdefs.username_correct_and_password_are_given(String,String)?[0m
+    ?[32mThen ?[0m?[32muser is logged in?[0m                                                           ?[90m# Stepdefs.user_is_logged_in()?[0m
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

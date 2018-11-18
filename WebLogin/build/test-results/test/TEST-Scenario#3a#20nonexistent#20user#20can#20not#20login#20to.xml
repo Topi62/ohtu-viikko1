@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Scenario: nonexistent user can not login to" tests="4" skipped="0" failures="0" errors="0" timestamp="2018-11-18T11:32:41" hostname="dhcp-asv-91" time="0.021">
+  <properties/>
+  <testcase name="Given login is selected" classname="Scenario: nonexistent user can not login to" time="0.0"/>
+  <testcase name="When nonexist username &quot;loggaaja&quot; and password &quot;salainen2&quot; are given" classname="Scenario: nonexistent user can not login to" time="0.0"/>
+  <testcase name="Then user is not logged in and error message is given" classname="Scenario: nonexistent user can not login to" time="0.0"/>
+  <testcase name="classMethod" classname="Scenario: nonexistent user can not login to" time="0.056"/>
+  <system-out><![CDATA[
+  Scenario: user can not login with incorrect password                     ?[90m# ohtu/logging_in.feature:8?[0m
+    ?[32mGiven ?[0m?[32mlogin is selected?[0m                                                ?[90m# Stepdefs.login_selected()?[0m
+    ?[32mWhen ?[0m?[32mcorrect username "?[0m?[32m?[1mjukka?[0m?[32m" and incorrect password "?[0m?[32m?[1mwrong?[0m?[32m" are given?[0m ?[90m# Stepdefs.username_and_incorrect_password_are_given(String,String)?[0m
+    ?[32mThen ?[0m?[32muser is not logged in and error message is given?[0m                  ?[90m# Stepdefs.user_is_not_logged_in_and_error_message_is_given()?[0m
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

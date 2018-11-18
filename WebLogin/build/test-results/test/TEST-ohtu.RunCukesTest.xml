@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ohtu.RunCukesTest" tests="0" skipped="0" failures="0" errors="0" timestamp="1970-01-01T00:00:00" hostname="dhcp-asv-91" time="0.0">
+  <properties/>
+  <system-out><![CDATA[Feature: As a registered user can log in with valid username/password-combination
+
+  Scenario: nonexistent user can not login to                            ?[90m# ohtu/logging_in.feature:13?[0m
+    ?[32mGiven ?[0m?[32mlogin is selected?[0m                                              ?[90m# Stepdefs.login_selected()?[0m
+    ?[32mWhen ?[0m?[32mnonexist username "?[0m?[32m?[1mloggaaja?[0m?[32m" and password "?[0m?[32m?[1msalainen2?[0m?[32m" are given?[0m ?[90m# Stepdefs.nonexist_username_and_password_are_given(String,String)?[0m
+    ?[32mThen ?[0m?[32muser is not logged in and error message is given?[0m                ?[90m# Stepdefs.user_is_not_logged_in_and_error_message_is_given()?[0m
+Feature: A new user account can be created if a proper unused username and password are given
+
+  Scenario: user can not login with account that is not successfully created ?[90m# ohtu/new_user.feature:29?[0m
+    ?[32mGiven ?[0m?[32muser with username "?[0m?[32m?[1maa?[0m?[32m" and password "?[0m?[32m?[1mbad?[0m?[32m" is tried to be created?[0m  ?[90m# Stepdefs.not_created_user_cannot_log_in(String,String)?[0m
+    ?[32mAnd ?[0m?[32mlogin is selected?[0m                                                    ?[90m# Stepdefs.login_selected()?[0m
+    ?[32mWhen ?[0m?[32mwhen not created username "?[0m?[32m?[1maa?[0m?[32m" and password "?[0m?[32m?[1mbad?[0m?[32m" is trying logIn?[0m   ?[90m# Stepdefs.when_not_created_username_and_password_is_trying_logIn(String,String)?[0m
+    ?[32mThen ?[0m?[32muser is not logged in and error message is given?[0m                    ?[90m# Stepdefs.user_is_not_logged_in_and_error_message_is_given()?[0m
+
+9 Scenarios (?[32m9 passed?[0m)
+29 Steps (?[32m29 passed?[0m)
+0m1.948s
+
+]]></system-out>
+  <system-err><![CDATA[[Test worker] INFO spark.webserver.SparkServer - >>> Spark shutting down ...
+[Test worker] INFO org.eclipse.jetty.server.Server - Graceful shutdown org.eclipse.jetty.server.Server@6f64b76 by 
+[Test worker] INFO org.eclipse.jetty.server.ServerConnector - Stopped ServerConnector@204aa36{HTTP/1.1}{0.0.0.0:4567}
+[Test worker] INFO spark.webserver.SparkServer - done
+]]></system-err>
+</testsuite>

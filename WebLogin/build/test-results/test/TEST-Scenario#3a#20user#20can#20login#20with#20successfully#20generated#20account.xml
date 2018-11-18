@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Scenario: user can login with successfully generated account" tests="5" skipped="0" failures="0" errors="0" timestamp="2018-11-18T11:32:41" hostname="dhcp-asv-91" time="0.04">
+  <properties/>
+  <testcase name="Given user with username &quot;lea&quot; with password &quot;salainen1&quot; is successfully created" classname="Scenario: user can login with successfully generated account" time="0.0"/>
+  <testcase name="And login is selected" classname="Scenario: user can login with successfully generated account" time="0.0"/>
+  <testcase name="When correct username &quot;lea&quot; and password &quot;salainen1&quot; are given" classname="Scenario: user can login with successfully generated account" time="0.0"/>
+  <testcase name="Then user is logged in" classname="Scenario: user can login with successfully generated account" time="0.0"/>
+  <testcase name="classMethod" classname="Scenario: user can login with successfully generated account" time="0.098"/>
+  <system-out><![CDATA[
+  Scenario: creation fails when password and password confirmation do not match                                                    ?[90m# ohtu/new_user.feature:18?[0m
+    ?[32mGiven ?[0m?[32mcommand new user is selected?[0m                                                                                             ?[90m# Stepdefs.new_user_selected()?[0m
+    ?[32mWhen ?[0m?[32ma valid username "?[0m?[32m?[1mliisa3?[0m?[32m" and correct password "?[0m?[32m?[1msalaatti2?[0m?[32m" and not matching password confirmation "?[0m?[32m?[1msalaatii2?[0m?[32m" are entered?[0m ?[90m# Stepdefs.username_and_too_short_password_are_given(String,String,String)?[0m
+    ?[32mThen ?[0m?[32muser is not created and error "?[0m?[32m?[1mpassword and password confirmation do not match?[0m?[32m" is reported?[0m                               ?[90m# Stepdefs.user_is_not_created_and_error_message_is_given(String)?[0m
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
